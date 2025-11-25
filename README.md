@@ -1,0 +1,2 @@
+# miniproject
+python project fybtech
