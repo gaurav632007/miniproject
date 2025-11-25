@@ -29,7 +29,7 @@ with col1:
 
 with col2:
     st.header("Gaurav Agrawal ")
-    st.image("app/static/p.jpg")
+    st.image("static/p.jpg")
 
 with col3:
     st.header("An owl")
