@@ -37,9 +37,10 @@ with t2:
     yslide = st.select_slider(
     "Select Year",
     options= ys)
-    fig = px.scatter(df,
+    fig = px.scatter(long,
     x="name",
-    y=yslide,
+    y="value",
+    animation_frame = "year"
     hover_name="name",
     log_x=False,
     size_max=60,)
