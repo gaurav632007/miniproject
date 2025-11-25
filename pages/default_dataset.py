@@ -27,10 +27,9 @@ fig = px.scatter(df,
 )
 
 long = pd.melt(df, id_vars=['geo', 'name'], var_name='year', value_name='value')
-fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year", locationmode="ISO-3")
+long['geo'] = long['geo'].str.upper()
+fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year")
+
 st.plotly_chart(fig, theme=None, use_container_width=True)
 st.plotly_chart(fig2, use_container_width=True)
-print(long.head())
-print(long.dtypes)
-print(long[long['value'].isna()].head())
 
