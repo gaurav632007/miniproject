@@ -18,7 +18,7 @@ yslide = st.select_slider(
 
 df = pd.read_csv("datasets/gdp_pcap.csv")
 
-fig = px.scatter(
+fig = px.scatter(df,
     x="name",
     y=yslide,
     hover_name="name",
