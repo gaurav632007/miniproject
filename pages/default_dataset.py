@@ -27,7 +27,7 @@ fig = px.scatter(df,
 )
 
 long = pd.melt(df, id_vars=['geo', 'name'], var_name='year', value_name='value')
-fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year", range_color=[20,80])
+fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year")
 
 st.plotly_chart(fig, theme=None, use_container_width=True)
 st.plotly_chart(fig2, theme= None, use_container_width=True)
