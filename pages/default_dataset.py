@@ -17,19 +17,36 @@ yslide = st.select_slider(
 )
 
 df = pd.read_csv("datasets/gdp_pcap.csv")
-
-fig = px.scatter(df,
-    x="name",
-    y=yslide,
-    hover_name="name",
-    log_x=False,
-    size_max=60,
-)
-
 long = pd.melt(df, id_vars=['geo', 'name'], var_name='year', value_name='value')
 long['geo'] = long['geo'].str.upper()
-fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year")
+    
+fig = px.scatter(df,
+x="name",
+y=yslide,
+hover_name="name",
+log_x=False,
+size_max=60,)
 
-st.plotly_chart(fig, theme=None, use_container_width=True)
-st.plotly_chart(fig2, use_container_width=True)
+fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year")
+t1, t2 = st.tabs(["Chloropleth", "Scatter"])
+
+with t1:
+    st.header("Chloropleth")
+    st.plotly_chart(fig2, use_container_width=True)
+
+
+with t2:
+    st.header("Scatter")
+    st.plotly_chart(fig, theme=None, use_container_width=True)
+
+
+
+
+
+
+
+
+
+
+
 
