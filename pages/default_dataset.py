@@ -40,7 +40,7 @@ with t2:
     fig = px.scatter(long,
     x="name",
     y="value",
-    animation_frame = "year"
+    animation_frame = "year",
     hover_name="name",
     log_x=False,
     size_max=60,)
