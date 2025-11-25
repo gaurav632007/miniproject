@@ -26,5 +26,26 @@ fig = px.scatter(df,
     size_max=60,
 )
 
+year_cols = [c for c in df.columns if c.isdigit()]
+long = df.melt(
+    id_vars=["geo", "name"],
+    value_vars=year_cols,
+    var_name="year",
+    value_name="value"
+)
+fig3 = px.choropleth(
+    
+    long,
+    locations="geo",
+    color="value",
+    hover_name="name",
+    animation_frame="year",
+    projection="natural earth")
+
+
+#fig2 = px.choropleth(df, locations='geo', color="", hover_name="name", animation_frame="year", range_color=[20,80])
+
+
 st.plotly_chart(fig, theme=None, use_container_width=True)
+st.plotly_chart(fig3, theme= None, use_container_width=True)
 
