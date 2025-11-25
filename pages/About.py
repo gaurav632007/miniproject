@@ -15,7 +15,7 @@ md ='''
 '''
 
 st.markdown(md)
-c1, c2, c3, c4, c5 , c6 = st.columns(6,vertical_alignment="top")
+c1, c2, c3, c4, c5 , c6 = st.columns(6)
 
 with c1:
     st.text("Achintya Mishra")

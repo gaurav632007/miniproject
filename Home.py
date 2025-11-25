@@ -54,7 +54,7 @@ st.markdown('<div> </div>', unsafe_allow_html=True)
 st.markdown('<div> </div>', unsafe_allow_html=True)
 st.markdown('<div>  </div>', unsafe_allow_html=True)
 st.markdown(htu)
-VIDEO_URL = "https://www.youtube.com/watch?v=UDNRsmULvWQ"
+VIDEO_URL = "https://youtu.be/S7TUe5w6RHo?si=8yBb5SGrhdUXkO7M"
 st.video(VIDEO_URL)
-st.markdown('<div>credits: Bill Wurtz</div> <a href="https://www.youtube.com/channel/UCq6aw03lNILzV96UvEAASfQ">youtube channel</a>', unsafe_allow_html=True)
+st.markdown('<div>credits: kurzgesagt- In a Nutshell </div> <a href="https://www.youtube.com/@kurzgesagt">youtube channel</a>', unsafe_allow_html=True)
 st.markdown(ref)
