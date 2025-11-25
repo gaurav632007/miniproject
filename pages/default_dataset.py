@@ -13,14 +13,25 @@ ys = [str(y) for y in range(1800, 2026)]
 df = pd.read_csv("datasets/gdp_pcap.csv")
 long = pd.melt(df, id_vars=['geo', 'name'], var_name='year', value_name='value')
 long['geo'] = long['geo'].str.upper()
-vmin = long['value'].min()
-vmax = long['value'].max()
+
 
 
 t1, t2 = st.tabs(["World Map", "Scatter"])
 with t1:
     st.header("World Map")
-    fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year",range_color=[vmin, vmax])
+    clor = st.radio(
+    "Choose Colour Scheme",
+    ["Viridis",
+"Plasma",
+"Inferno",
+"Magma",
+"Cividis",
+"Turbo",
+"Aggrnyl",
+"Agsunset",
+"Bluered"],
+    index=None,)
+    fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year",color_continuous_scale=clor)
     st.plotly_chart(fig2, use_container_width=True)
 with t2:
     st.header("Scatter")
