@@ -16,7 +16,7 @@ long['geo'] = long['geo'].str.upper()
 
 
 
-t1, t2 , t3 = st.tabs(["World Map", "Scatter"])
+t1, t2 , t3 = st.tabs(["World Map", "Scatter","Line chart"])
 with t1:
     st.header("World Map")
     clor = st.selectbox(
@@ -45,6 +45,7 @@ with t2:
     size_max=60,)
     st.plotly_chart(fig, theme=None, use_container_width=True)
 with t3:
+    st.header("Line Chart")
     fig3 = px.line(long, x="year", y="value", color='name')
     st.plotly_chart(fig3, theme=None, use_container_width=True)
 
