@@ -16,7 +16,7 @@ yslide = st.select_slider(
     ],
 )
 
-df = pd.read_csv("datasets/internet_users.csv")
+df = pd.read_csv("datasets/life_expectancy.csv")
 
 fig = px.scatter(df,
     x="name",
