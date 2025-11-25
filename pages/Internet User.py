@@ -10,7 +10,7 @@ st.set_page_config(
 
 
 ys = [str(y) for y in range(1990, 2025)]
-df = pd.read_csv("datasets/internet_user.csv")
+df = pd.read_csv("datasets/internet_users.csv")
 long = pd.melt(df, id_vars=['geo', 'name'], var_name='year', value_name='value')
 long['geo'] = long['geo'].str.upper()
 
