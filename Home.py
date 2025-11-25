@@ -30,9 +30,28 @@ st.markdown(
     unsafe_allow_html=True
 )
 ref = '''# References and Credits  
-- 
--  
--  
+-  Gapminder Foundation. Gapminder Data Documentation and Datasets.
+Available at: https://www.gapminder.org/data
+(Used for population, GDP, life expectancy, fertility rate, CO₂ emissions, and other global indicators.)
+- Streamlit Documentation. Streamlit — The fastest way to build data apps.
+Available at: https://docs.streamlit.io
+(Used to create the interactive web application/dashboard.)
+- Pandas Documentation.
+Available at: https://pandas.pydata.org/docs
+(Used for data loading, cleaning, manipulation, and merging.)
+- Plotly Documentation.
+Available at: https://plotly.com/python
+(Used to create world maps, bar charts, line graphs, scatter plots, and animated visualizations.)
+- Python Official Documentation.
+Available at: https://docs.python.org
+(General programming reference.)
+  Streamlit Community Cloud.
+Available at: https://streamlit.io/cloud
+(Used for hosting and deploying the project dashboard online.)
+- Kurzgesagt  In a Nutshell. Educational Videos on Global Change and Data Trends.
+YouTube Channel: https://www.youtube.com/@kurzgesagt
+(Used for conceptual inspiration and understanding global trends.)
+ 
 '''
 htu = '''# How to Use  
 1. just choose the data you want from the sidebar 
