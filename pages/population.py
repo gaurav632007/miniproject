@@ -10,7 +10,7 @@ st.set_page_config(
 
 
 ys = [str(y) for y in range(1800, 2026)]
-df = pd.read_csv("datasets/gdp_pcap.csv")
+df = pd.read_csv("datasets/population.csv")
 long = pd.melt(df, id_vars=['geo', 'name'], var_name='year', value_name='value')
 long['geo'] = long['geo'].str.upper()
 
@@ -34,7 +34,7 @@ with t1:
     st.plotly_chart(fig2, use_container_width=True)
 with t2:
     st.header("Scatter")
-    
+   
     fig = px.scatter(long,
     x="value",
     y ="name",
