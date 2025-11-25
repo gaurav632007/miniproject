@@ -38,8 +38,8 @@ with t2:
     "Select Year",
     options= ys)
     fig = px.scatter(long,
-    x="name",
-    y="value",
+    x="value",
+    y ="name",
     animation_frame = "year",
     hover_name="name",
     log_x=False,
