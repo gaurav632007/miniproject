@@ -19,7 +19,7 @@ long['geo'] = long['geo'].str.upper()
 t1, t2 = st.tabs(["World Map", "Scatter"])
 with t1:
     st.header("World Map")
-    clor = st.radio(
+    clor = st.multiselect(
     "Choose Colour Scheme",
     ["Viridis",
 "Plasma",
@@ -30,7 +30,7 @@ with t1:
 "Aggrnyl",
 "Agsunset",
 "Bluered"],
-    index=None,)
+    default=["Viridis"],)
     fig2 = px.choropleth(long, locations="geo", color="value", hover_name="name", animation_frame="year",color_continuous_scale=clor)
     st.plotly_chart(fig2, use_container_width=True)
 with t2:
