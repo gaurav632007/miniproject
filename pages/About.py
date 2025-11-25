@@ -11,7 +11,12 @@ st.set_page_config(
 md ='''
 # About
 
-
+## Team Members
+- Achintya Mishra
+- Gaurav Agrawal
+- Dhanvin Ambavkar
+- Ayaan Lone 
+- Eeshaan Suryawanshi
 
 '''
 
