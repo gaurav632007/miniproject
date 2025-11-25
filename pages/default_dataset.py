@@ -33,6 +33,10 @@ long = df.melt(
     var_name="year",
     value_name="value"
 )
+
+long["year"] = long["year"].astype(int)
+long["value"] = pd.to_numeric(long["value"], errors="coerce")
+
 fig3 = px.choropleth(
     
     long,
