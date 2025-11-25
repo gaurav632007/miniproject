@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os 
 
 st.set_page_config(
-    page_title="About",
+    page_title="Home",
     layout="centered"
 )
 
@@ -11,25 +12,27 @@ md ='''
 # About
 
 ## Team Members
-- Achintya Mishra
-- Gaurav Agrawal
-- Dhanvin Ambavkar
-- Ayaan Lone 
-- Eeshaan Suryawanshi
-
 '''
 
 st.markdown(md)
-col1, col2, col3 = st.columns(3)
+c1, c2, c3, c4, c5 = st.columns(5)
 
-with col1:
+with c1:
     st.header("Achintya Mishra")
-    st.image("https://static.streamlit.io/examples/cat.jpg")
+    st.image("static/a.jpg")
 
-with col2:
-    st.header("Gaurav Agrawal ")
-    st.image("static/p.jpg")
+with c2:
+    st.header("Gaurav Agrawal")
+    st.image("static/gaurav.jpg")
 
-with col3:
-    st.header("An owl")
-    st.image("https://static.streamlit.io/examples/owl.jpg")
+with c3:
+    st.header("Dhanvin Ambavkar")
+    st.image("static/dhanvin.jpg")
+
+with c3:
+    st.header("Ayaan Lone")
+    st.image("static/ayaan.jpg")
+
+with c3:
+    st.header("Eeshaan Suryawanshi")
+    st.image("static/eeshaan.jpg")
