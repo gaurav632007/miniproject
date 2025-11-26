@@ -39,3 +39,4 @@ with c5:
 with c6:
     st.text("Arnav Kohli")
     st.image("static/arnav.jpg")
+
