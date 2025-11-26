@@ -93,7 +93,6 @@ Dataset correlations dashboard	⏳ Planned
 👤 Author
 
 📌 Gaurav Agrawal,📌 Achintya Mishra,📌 Arnav Kohli,📌 Dhanvin Ambavkar,📌 Eeshaan Suryanwanshi,📌 Ayaan Lone
-Developer · Researcher · Data Visualization Enthusiast
 
 🏷 License
 
