@@ -54,10 +54,10 @@ YouTube Channel: https://www.youtube.com/@kurzgesagt
  
 '''
 htu = '''# How to Use  
-1. just choose the data you want from the sidebar 
-2. choose the data representation format
-3. slide the year graph to get a year wise picture 
-4. some graphs have an animated vresion of them try it
+1. Just choose the dataset you want from the sidebar.
+2. Choose the data representation format.
+3. Slide the year graph to get a year wise picture. 
+4. Some graphs have an animated vresion of them try it.
 5. Enjoy !   
    
 ----
