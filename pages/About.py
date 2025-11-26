@@ -20,8 +20,8 @@ with c1:
     st.image("static/a.jpg")
 
 with c2:
-    st.text("Gaurav Agrawal")
-    st.image("static/gaurav.jpg")
+    st.text("Arnav Kohli")
+    st.image("static/arnav.jpg")
 
 with c3:
     st.text("Dhanvin Ambavkar")
@@ -35,6 +35,6 @@ with c5:
     st.text("Eeshaan Suryawanshi")
     st.image("static/eeshaan.jpg")
 with c6:
-    st.text("Arnav Kohli")
-    st.image("static/arnav.jpg")
+    st.text("Gaurav Agrawal")
+    st.image("static/gaurav.jpg")
 
