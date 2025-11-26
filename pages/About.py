@@ -13,7 +13,7 @@ md ='''
 '''
 
 st.markdown(md)
-c1, c2, c3, c4, c5 , c6 = st.columns(6,vertical_alignment= "center", gap = "medium")
+c1, c2, c3, c4, c5 , c6 = st.columns(6,vertical_alignment= "top")
 
 with c1:
     st.markdown("###### Achintya Mishra")
