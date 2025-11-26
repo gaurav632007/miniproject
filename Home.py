@@ -11,10 +11,6 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .main {
-        background: #ffffff;
-        color: #ffffff;
-    }
     .block-title {
         border-radius: 12px;
         font-size: 36px;
